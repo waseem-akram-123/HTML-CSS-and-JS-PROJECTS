@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: border-box;
+}
+body {
+    text-emphasis: center;
+}
+
+.main-container {
+    background: linear-gradient(45deg,#EBD3F8,#AD49E1,#7A1CAC);
+    background-size: 300% 300%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    height: 500px;
+    width: 500px;
+    background-color: aliceblue;
+    /* display: flex;
+    justify-content: space-around; */
+    border-radius: 20px;
+    border: 6px double #2E073F;
+    animation: color 3s ease-in-out 0s infinite;
+}
+@keyframes color {
+    0%{
+        border: 6px double rgb(133, 7, 133);
+    }
+    25%{
+        border: 6px double orange;
+    }
+    50%{
+        border: 6px double red;
+    }
+    75%{
+        border: 6px double rgb(238, 55, 55);
+    }
+    100%{
+        border: 6px double goldenrod;
+    }
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    /* background-color: aqua; */
+    position: relative;
+    top: 3px;
+}
+.icon {
+    height: 80px;
+    width: 100px;
+    background-image: url("icon.avif");
+    background-size: cover;
+}
+.main {
+    height: 80px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main input {
+    height: 50px;
+    width: 70%;
+    font-size: 20px;
+    border: 2px solid transparent;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: none;
+    outline: none;
+}
+.main button {
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /* border-radius: 15px; */
+    background-color: #2E073F;
+    color: aliceblue;
+}
+
+.list-container {
+    /* background-color: blueviolet; */
+    position: relative;
+    left: 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+ul li ::before {
+    content: " ";
+    position: absolute;
+    height: 28px;
+    width: 128x;
+    border-radius: 50%;
+    background-image: url("unchecked.webp");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+.list-container{
+    /* background-color: aqua; */
+    height: 30px;
+
+
+}
+.list-container li {
+    /* width: 80%; */
+    font-size: 25px;
+}
+span {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 350px;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: rgb(255, 68, 0);
+    text-align: center;
+    cursor: pointer;
+}
+.checked {
+    color: black;
+    text-decoration: line-through;
+}
